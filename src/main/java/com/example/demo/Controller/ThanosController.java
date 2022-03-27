@@ -20,10 +20,6 @@ public class ThanosController {
     @Autowired
     private thanosServiceInterface thanosServiceInterface;
 
-//    public ThanosController(ThanosService thanosService) {
-//        this.thanosService = thanosService;
-//    }
-
     @GetMapping("/all")
     public ResponseEntity<List<ThanosResponse>> getAllThanos(
             @RequestParam(defaultValue = "id") String sort) {
@@ -31,7 +27,7 @@ public class ThanosController {
         List<ThanosResponse> result = thanosServiceInterface.getAllMembers(sort)
                 .stream().map(ThanosResponse::new).collect(Collectors.toList());
 
-        return ResponseEntity.ok().body(result);
+        return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
