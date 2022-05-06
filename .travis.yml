@@ -1,0 +1,12 @@
+language: java
+before_install:
+  - chmod +x mvnw
+jdk:
+  - oraclejdk11
+#env:
+#  global:
+#    - CODECOV_TOKEN=:uuid-repo-token
+codecov:
+  token: 06b109b5-4250-4c48-99e0-eaa10e11f9e2
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

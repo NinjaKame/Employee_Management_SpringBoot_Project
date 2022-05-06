@@ -1,0 +1,13 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+demo,demo.model.request,ThanosRequest,0,50,0,0,0,7,0,10,0,10
+demo,demo.service,ThanosService,2,136,1,5,1,24,1,9,0,7
+demo,demo.entity,Thanos,21,113,0,6,1,25,1,18,1,15
+demo,demo.controller,ThanosController,20,101,2,2,4,20,2,7,0,7
+demo,demo.practiceBean,Car,16,0,0,0,6,0,5,0,5,0
+demo,demo.practiceBean,FrontWheelDrive,7,0,0,0,3,0,2,0,2,0
+demo,demo.practiceBean,RearWheelDrive,7,0,0,0,3,0,2,0,2,0
+demo,demo.model.response,ThanosResponse,46,38,0,0,3,12,7,6,7,6
+demo,demo,EmployeeManagementApplication,19,0,0,0,6,0,2,0,2,0
+demo,demo.exception,ResourceNotFoundException,0,4,0,0,0,2,0,1,0,1
+demo,demo.exception,GlobalExceptionHandler,68,0,0,0,10,0,4,0,4,0
+demo,demo.exception,ErrorDetail,43,0,0,0,6,0,9,0,9,0

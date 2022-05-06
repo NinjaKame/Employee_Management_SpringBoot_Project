@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Thanos.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">demo</a> &gt; <a href="index.source.html" class="el_package">demo.entity</a> &gt; <span class="el_source">Thanos.java</span></div><h1>Thanos.java</h1><pre class="source lang-java linenums">package demo.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
+
+import javax.persistence.*;
+import java.util.Random;
+
+@Getter
+<span class="fc" id="L15">@Setter</span>
+@Accessors(chain = true)
+@DynamicUpdate
+@DynamicInsert
+<span class="fc" id="L19">@NoArgsConstructor</span>
+<span class="nc" id="L20">@AllArgsConstructor</span>
+@Entity
+@Table(name = &quot;members&quot;)
+public class Thanos {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+<span class="fc" id="L26">    private int id;</span>
+
+    @Column(name = &quot;first_name&quot;)
+<span class="fc" id="L29">    private String firstName;</span>
+
+    @Column(name = &quot;last_name&quot;)
+<span class="fc" id="L32">    private String lastName;</span>
+
+    @Column(name = &quot;department&quot;)
+<span class="fc" id="L35">    private String department;</span>
+
+    @Column(name = &quot;e_mail&quot;)
+<span class="fc" id="L38">    private String email;</span>
+
+    @Column(name = &quot;pass_word&quot;)
+<span class="fc" id="L41">    private String password;</span>
+
+<span class="fc" id="L43">    public Thanos(String firstName, String lastName, String department, String password) {</span>
+<span class="fc" id="L44">        this.firstName = firstName;</span>
+<span class="fc" id="L45">        this.lastName = lastName;</span>
+<span class="fc" id="L46">        this.department = department;</span>
+<span class="fc" id="L47">        this.email = firstName + &quot;.&quot; + lastName + &quot;@&quot;</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">                + ((department == null) ? &quot;company.com&quot; : department + &quot;.company.com&quot;);</span>
+<span class="fc" id="L49">        this.password = password;</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">        if (password == null) {</span>
+<span class="fc" id="L51">            this.password = generateRandomPassword();</span>
+        }
+//        System.out.println(&quot;Customized constructor called&quot;);
+<span class="fc" id="L54">    }</span>
+
+
+    private static String generateRandomPassword() {
+<span class="fc" id="L58">        String randomString = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;</span>
+                + &quot;0123456789&quot;
+                + &quot;abcdefghijklmnopqrstuvxyz&quot;;
+<span class="fc" id="L61">        StringBuilder sb = new StringBuilder();</span>
+<span class="fc bfc" id="L62" title="All 2 branches covered.">        for (int i = 0; i &lt; 10; i++) {</span>
+<span class="fc" id="L63">            int index = new Random().nextInt(randomString.length());</span>
+<span class="fc" id="L64">            char randomChar = randomString.charAt(index);</span>
+<span class="fc" id="L65">            sb.append(randomChar);</span>
+        }
+<span class="fc" id="L67">        return sb.toString();</span>
+    }
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
