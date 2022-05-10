@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fed51869-bb92-421e-9418-7094096cc5f6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/controller/ThanosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/controller/ThanosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/entity/Thanos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/entity/Thanos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/service/ThanosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/service/ThanosService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/demo/controller/ThanosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demo/controller/ThanosController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/demo/entity/Thanos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demo/entity/Thanos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/demo/model/response/ThanosResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demo/model/response/ThanosResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/demo/service/ThanosService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demo/service/ThanosService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/demo/controller/ThanosControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demo/controller/ThanosControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/demo/service/ThanosServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demo/service/ThanosServiceTest.class" afterDir="false" />
     </list>
     <list id="69307966-9976-454f-ab1a-61e4c2b0f185" name="Revert mvn.wrapper" comment="Revert mvn.wrapper" />
     <list id="a87075db-f86c-4732-876e-c48e2e440830" name="Revert mvnw.cmd" comment="Revert mvnw.cmd" />
@@ -83,13 +96,13 @@
       <command value="mvn cobertura:cobertura " />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ThanosControllerTest">
-    <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demo.DemoApplication" />
+  <component name="RunManager" selected="Application.EmployeeManagementApplication">
+    <configuration name="EmployeeManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.EmployeeManagementApplication" />
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demo.*" />
+          <option name="PATTERN" value="demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EmployeeManagementApplication" />
         <item itemvalue="JUnit.ThanosControllerTest" />
         <item itemvalue="Diffblue Cover.Write tests for class ThanosController" />
         <item itemvalue="Diffblue Cover.Write tests for class ThanosService (2)" />
         <item itemvalue="JUnit.ThanosServiceTest" />
-        <item itemvalue="Diffblue Cover.Write tests for class ThanosService" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +201,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="XML_exchange_api" />
                       </list>
                     </value>
                   </entry>

@@ -23,7 +23,7 @@ import java.util.Random;
 public class Thanos {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @Column(name = "first_name")
     private String firstName;

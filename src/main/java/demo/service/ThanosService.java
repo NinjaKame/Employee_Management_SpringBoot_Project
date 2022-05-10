@@ -6,16 +6,18 @@ import demo.model.request.ThanosRequest;
 import demo.repository.ThanosRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 
 @Service @RequiredArgsConstructor
-public class ThanosService implements thanosServiceInterface {
+public class ThanosService implements thanosServiceInterface, CommandLineRunner {
 
     @Autowired
     private final ThanosRepository thanosRepository;
@@ -80,4 +82,20 @@ public class ThanosService implements thanosServiceInterface {
         }
     }
 
+    @Override
+    public void run(String... args) throws Exception {
+        List<Thanos> thanosList = Arrays.asList(
+                new Thanos("John","Cena","Mechanical", null),
+                new Thanos("Phong","Tom","Civil",null),
+                new Thanos("Huan","Rose","Biology",null),
+                new Thanos("Lionel","Messi","Football",null),
+                new Thanos("Kento","Momota","Badminton",null),
+                new Thanos("Lee","Rock","Medical", null),
+                new Thanos("Uzumaki","Naruto","DataScience",null),
+                new Thanos("Thuan","Tran","Developer",null),
+                new Thanos("Mario","Balotteli","Boxing",null),
+                new Thanos("Harry","Maguire","RacingBoy",null)
+        );
+        thanosRepository.saveAll(thanosList);
+    }
 }
