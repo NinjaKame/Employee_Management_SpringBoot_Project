@@ -171,8 +171,6 @@
       <list>
         <item itemvalue="Application.EmployeeManagementApplication" />
         <item itemvalue="JUnit.ThanosControllerTest" />
-        <item itemvalue="Diffblue Cover.Write tests for class ThanosController" />
-        <item itemvalue="Diffblue Cover.Write tests for class ThanosService (2)" />
         <item itemvalue="JUnit.ThanosServiceTest" />
       </list>
     </recent_temporary>
